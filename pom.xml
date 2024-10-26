@@ -11,7 +11,7 @@
 	<groupId>com.robert</groupId>
 	<artifactId>micorservicios</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
-
+	<packaging>pom</packaging>
 	<url/>
 	<licenses>
 		<license/>
@@ -35,7 +35,7 @@
 		<module>inventory-service</module>
 		<module>orders-service</module>
 		<module>products-service</module>
-		
+
 	</modules>
 	<dependencies>
 

@@ -1,0 +1,49 @@
+version: '3'
+services:
+  ### BASE DE DATOS DE INVENTARIO POSTGRESQL
+  db-inventory:
+    container_name: db-inventory
+    image: postgres:15.2
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ms_inventory
+      POSTGRES_USER: rpaternina
+      POSTGRES_PASSWORD: 123456
+    ports:
+      - 5431:5431
+    expose:
+      - 5431
+    command: -p 5431
+
+
+  ### BD PARA ORDENES MYSQL
+
+  db-orders:
+    container_name: db-orders
+    image: mysql:8.0.33
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: ms_orders
+      MYSQL_USER: rpaternina
+      MYSQL_PASSWORD: 123456
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - 3306:3306
+    expose:
+      - 3306
+
+  ### BD PARA LOS PRODUCTOS POSTGRESQL
+
+  db-products:
+    container_name: db-products
+    image: postgres:15.2
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ms_products
+      POSTGRES_USER: rpaternina
+      POSTGRES_PASSWORD: 123456
+    ports:
+      - 5432:5432
+    expose:
+      - 5432
+    command: -p 5432
