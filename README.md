@@ -4,41 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>README - Microservices Project</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            color: #333;
-            line-height: 1.6;
-        }
-        h1, h2, h3 {
-            color: #007acc;
-        }
-        h1 {
-            text-align: center;
-        }
-        h2 {
-            border-bottom: 2px solid #007acc;
-            padding-bottom: 5px;
-        }
-        code {
-            background-color: #f4f4f4;
-            padding: 2px 5px;
-            border-radius: 3px;
-            font-size: 1em;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        .logo {
-            display: block;
-            margin: 0 auto;
-            width: 200px;
-        }
-        .highlight {
-            color: #007acc;
-            font-weight: bold;
-        }
-    </style>
 </head>
 <body>
 
